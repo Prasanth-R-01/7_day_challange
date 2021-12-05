@@ -1,0 +1,1402 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0818.1843                               -->
+<workbook source-build='2021.2.2 (20212.21.0818.1843)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <ParameterAction />
+    <_.fcp.ParameterActionClearSelection.true...ParameterActionClearSelection />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Top n' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='6'>
+        <calculation class='tableau' formula='6' />
+        <range granularity='1' />
+      </column>
+    </datasource>
+    <datasource caption='indian_food_Full Data (indian_f (indian_food_Full Data_Cleansed)' inline='true' name='federated.13ihfwm0oc0h0u1a9t0m40slxtzr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='indian_food_Full Data_Cleansed' name='excel-direct.127sbt50xc7u1k1e8849k1pk87ce'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/SEMESTER 7 COURSES (AUG to ___)/Data Visualisation/#7_day_challange/Day 7 - Indian Food Analysis/indian_food_Full Data_Cleansed.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.127sbt50xc7u1k1e8849k1pk87ce' name='indian_food_Full Data (indian_f' table='[&apos;indian_food_Full Data (indian_f$&apos;]' type='table'>
+          <columns gridOrigin='A1:K2295:no:A1:K2295:0' header='yes' outcome='2'>
+            <column datatype='string' name='All Ingredients' ordinal='0' />
+            <column datatype='string' name='Course' ordinal='1' />
+            <column datatype='string' name='Diet' ordinal='2' />
+            <column datatype='string' name='Flavor Profile' ordinal='3' />
+            <column datatype='string' name='Ingredients' ordinal='4' />
+            <column datatype='string' name='Name' ordinal='5' />
+            <column datatype='string' name='Pivot Field Names' ordinal='6' />
+            <column datatype='string' name='Region' ordinal='7' />
+            <column datatype='string' name='State' ordinal='8' />
+            <column datatype='integer' name='Cook Time' ordinal='9' />
+            <column datatype='integer' name='Prep Time' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.127sbt50xc7u1k1e8849k1pk87ce' name='indian_food_Full Data (indian_f' table='[&apos;indian_food_Full Data (indian_f$&apos;]' type='table'>
+          <columns gridOrigin='A1:K2295:no:A1:K2295:0' header='yes' outcome='2'>
+            <column datatype='string' name='All Ingredients' ordinal='0' />
+            <column datatype='string' name='Course' ordinal='1' />
+            <column datatype='string' name='Diet' ordinal='2' />
+            <column datatype='string' name='Flavor Profile' ordinal='3' />
+            <column datatype='string' name='Ingredients' ordinal='4' />
+            <column datatype='string' name='Name' ordinal='5' />
+            <column datatype='string' name='Pivot Field Names' ordinal='6' />
+            <column datatype='string' name='Region' ordinal='7' />
+            <column datatype='string' name='State' ordinal='8' />
+            <column datatype='integer' name='Cook Time' ordinal='9' />
+            <column datatype='integer' name='Prep Time' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[indian_food_Full Data (indian_f]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K2295:no:A1:K2295:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>All Ingredients</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[All Ingredients]</local-name>
+            <parent-name>[indian_food_Full Data (indian_f]</parent-name>
+            <remote-alias>All Ingredients</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Course</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Course]</local-name>
+            <parent-name>[indian_food_Full Data (indian_f]</parent-name>
+            <remote-alias>Course</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diet</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Diet]</local-name>
+            <parent-name>[indian_food_Full Data (indian_f]</parent-name>
+            <remote-alias>Diet</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Flavor Profile</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Flavor Profile]</local-name>
+            <parent-name>[indian_food_Full Data (indian_f]</parent-name>
+            <remote-alias>Flavor Profile</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ingredients</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ingredients]</local-name>
+            <parent-name>[indian_food_Full Data (indian_f]</parent-name>
+            <remote-alias>Ingredients</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[indian_food_Full Data (indian_f]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[indian_food_Full Data (indian_f]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[indian_food_Full Data (indian_f]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[indian_food_Full Data (indian_f]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cook Time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cook Time]</local-name>
+            <parent-name>[indian_food_Full Data (indian_f]</parent-name>
+            <remote-alias>Cook Time</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prep Time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Prep Time]</local-name>
+            <parent-name>[indian_food_Full Data (indian_f]</parent-name>
+            <remote-alias>Prep Time</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='total time' datatype='real' default-format='n#,##0;-#,##0' name='[Calculation_1202461146067357696]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Cook Time])+AVG([Prep Time])' />
+      </column>
+      <column datatype='string' name='[Diet]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Ingredients]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <semantic-values semantic-role='[State].[Name]'>
+          <semantic-value key='&quot;NCT of Delhi&quot;' value='&quot;Delhi&quot;' />
+        </semantic-values>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='indian_food_Full Data (indian_f' datatype='table' name='[__tableau_internal_object_id__].[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]' role='measure' type='quantitative' />
+      <column-instance column='[Diet]' derivation='None' name='[none:Diet:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Diet)' hidden='true' name='[Action (Diet)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Diet]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Ingredients)' hidden='true' name='[Action (Ingredients)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Ingredients]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Name)' hidden='true' name='[Action (Name)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Name]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (State)' hidden='true' name='[Action (State)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[State]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/prasa/OneDrive/Documents/My Tableau Repository/Datasources/indian_food_Full Data (indian_f (indian_food_Full Data_Cleansed).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='12/05/2021 04:38:58 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='indian_food_Full Data (indian_f (indian_food_Full Data_Cleansed)' increment-value='%null%' refresh-type='create' rows-inserted='2294' timestamp-start='2021-12-05 16:38:58.020' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>All Ingredients</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[All Ingredients]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>All Ingredients</remote-alias>
+              <ordinal>0</ordinal>
+              <family>indian_food_Full Data (indian_f</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>256</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Course</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Course]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Course</remote-alias>
+              <ordinal>1</ordinal>
+              <family>indian_food_Full Data (indian_f</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Diet</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Diet]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Diet</remote-alias>
+              <ordinal>2</ordinal>
+              <family>indian_food_Full Data (indian_f</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Flavor Profile</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Flavor Profile]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Flavor Profile</remote-alias>
+              <ordinal>3</ordinal>
+              <family>indian_food_Full Data (indian_f</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ingredients</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Ingredients]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ingredients</remote-alias>
+              <ordinal>4</ordinal>
+              <family>indian_food_Full Data (indian_f</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>224</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Name</remote-alias>
+              <ordinal>5</ordinal>
+              <family>indian_food_Full Data (indian_f</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>259</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>6</ordinal>
+              <family>indian_food_Full Data (indian_f</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>7</ordinal>
+              <family>indian_food_Full Data (indian_f</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>8</ordinal>
+              <family>indian_food_Full Data (indian_f</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cook Time</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Cook Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cook Time</remote-alias>
+              <ordinal>9</ordinal>
+              <family>indian_food_Full Data (indian_f</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Prep Time</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Prep Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Prep Time</remote-alias>
+              <ordinal>10</ordinal>
+              <family>indian_food_Full Data (indian_f</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Diet:nk]' palette='green_gold_10_0' type='palette'>
+            <map to='#5aa355'>
+              <bucket>&quot;vegetarian&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;non vegetarian&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='indian_food_Full Data (indian_f' id='indian!food!Full Data (indian!f_21F475CE05854B788B9168C413A1E8F4'>
+            <properties context=''>
+              <relation connection='excel-direct.127sbt50xc7u1k1e8849k1pk87ce' name='indian_food_Full Data (indian_f' table='[&apos;indian_food_Full Data (indian_f$&apos;]' type='table'>
+                <columns gridOrigin='A1:K2295:no:A1:K2295:0' header='yes' outcome='2'>
+                  <column datatype='string' name='All Ingredients' ordinal='0' />
+                  <column datatype='string' name='Course' ordinal='1' />
+                  <column datatype='string' name='Diet' ordinal='2' />
+                  <column datatype='string' name='Flavor Profile' ordinal='3' />
+                  <column datatype='string' name='Ingredients' ordinal='4' />
+                  <column datatype='string' name='Name' ordinal='5' />
+                  <column datatype='string' name='Pivot Field Names' ordinal='6' />
+                  <column datatype='string' name='Region' ordinal='7' />
+                  <column datatype='string' name='State' ordinal='8' />
+                  <column datatype='integer' name='Cook Time' ordinal='9' />
+                  <column datatype='integer' name='Prep Time' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_C0FE501C5CFA450997EDAD78681D0C83]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='dishes count in india' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_2DA3C1CC8CF64F25A89CB57F66E1E79B]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Ingrediets' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action5_7E4D27E2DD4E41F09AF0BDF171C93A21]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Diet catg' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <edit-parameter-action caption='Parameter1' name='[Action3_5DCFB47CB9574D319E05377565EFFBA8]'>
+      <activation type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet'>
+        <exclude-sheet name='avg. cooking time' />
+        <exclude-sheet name='avg. prep time' />
+        <exclude-sheet name='Diet catg' />
+        <exclude-sheet name='Ingrediets' />
+      </source>
+      <agg-type type='attr' />
+      <_.fcp.ParameterActionClearSelection.true...clear-option type='do-nothing' value='i:1' />
+      <params>
+        <param name='source-field' value='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[usr:Calculation_1202461146067357696:qk]' />
+        <param name='target-parameter' value='[Parameters].[Parameter 1]' />
+      </params>
+    </edit-parameter-action>
+    <edit-parameter-action caption='Parameter2' name='[Action4_9ABD24EAC28A4F278E0025B865FD3F94]'>
+      <activation type='on-select' />
+      <source type='sheet' worksheet='dishes' />
+      <agg-type type='attr' />
+      <_.fcp.ParameterActionClearSelection.true...clear-option type='do-nothing' value='i:1' />
+      <params>
+        <param name='source-field' value='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[usr:Calculation_1202461146067357696:qk]' />
+        <param name='target-parameter' value='[Parameters].[Parameter 1]' />
+      </params>
+    </edit-parameter-action>
+  </actions>
+  <worksheets>
+    <worksheet name='Diet catg'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Diet Category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='indian_food_Full Data (indian_f (indian_food_Full Data_Cleansed)' name='federated.13ihfwm0oc0h0u1a9t0m40slxtzr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13ihfwm0oc0h0u1a9t0m40slxtzr'>
+            <column datatype='string' name='[Diet]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Ingredients]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;NCT of Delhi&quot;' value='&quot;Delhi&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Name]' derivation='Count' name='[cnt:Name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Diet]' derivation='None' name='[none:Diet:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Ingredients)]'>
+            <groupfilter function='level-members' level='[Ingredients]' user:ui-action-filter='[Action2_2DA3C1CC8CF64F25A89CB57F66E1E79B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (State)]'>
+            <groupfilter function='level-members' level='[State]' user:ui-action-filter='[Action1_C0FE501C5CFA450997EDAD78681D0C83]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (State)]</column>
+            <column>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Ingredients)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='normal' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[none:Diet:nk]' />
+              <wedge-size column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[cnt:Name:qk]' />
+              <size column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[cnt:Name:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#b6992d' fontsize='14'><![CDATA[<[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[none:Diet:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#555555' fontsize='14'>Count of Dishes: </run>
+                <run bold='true' fontcolor='#b6992d' fontsize='14'><![CDATA[<[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[cnt:Name:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='auto' />
+                <format attr='vertical-align' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5052486658096313' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3CB1ED4A-D3DE-4CFF-A65D-53C977E48B36}' />
+    </worksheet>
+    <worksheet name='Ingrediets'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Most used Ingredients</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='indian_food_Full Data (indian_f (indian_food_Full Data_Cleansed)' name='federated.13ihfwm0oc0h0u1a9t0m40slxtzr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13ihfwm0oc0h0u1a9t0m40slxtzr'>
+            <column datatype='string' name='[Diet]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Ingredients]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;NCT of Delhi&quot;' value='&quot;Delhi&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Name]' derivation='Count' name='[cnt:Name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ingredients]' derivation='None' name='[none:Ingredients:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Diet)]'>
+            <groupfilter function='level-members' level='[Diet]' user:ui-action-filter='[Action5_7E4D27E2DD4E41F09AF0BDF171C93A21]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (State)]'>
+            <groupfilter function='level-members' level='[State]' user:ui-action-filter='[Action1_C0FE501C5CFA450997EDAD78681D0C83]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[none:Ingredients:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Ingredients:nk]' />
+              <groupfilter function='member' level='[none:Ingredients:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[none:Ingredients:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[cnt:Name:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[none:Ingredients:nk]</column>
+            <column>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (State)]</column>
+            <column>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Diet)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[cnt:Name:qk]' scope='cols' value='Number of Dishes' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#59a14f' fontsize='14'><![CDATA[<[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[none:Ingredients:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#555555' fontsize='14'>Count of Dishes:</run>
+                <run fontcolor='#59a14f' fontsize='14'>Æ </run>
+                <run bold='true' fontcolor='#59a14f' fontsize='14'><![CDATA[<[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[cnt:Name:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#d3b348' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[none:Ingredients:nk]</rows>
+        <cols>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[cnt:Name:qk]</cols>
+      </table>
+      <simple-id uuid='{E1814F3C-22A7-42DF-8F95-6CAEE3450069}' />
+    </worksheet>
+    <worksheet name='avg. cooking time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='14'>Average </run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontsize='14'>Cooking Time</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='indian_food_Full Data (indian_f (indian_food_Full Data_Cleansed)' name='federated.13ihfwm0oc0h0u1a9t0m40slxtzr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13ihfwm0oc0h0u1a9t0m40slxtzr'>
+            <column caption='ROUND(AVG([Cook Time]))' datatype='real' name='[Calculation_1202461146103447555]' role='measure' type='quantitative' user:unnamed='avg. cooking time'>
+              <calculation class='tableau' formula='ROUND(AVG([Cook Time]))' />
+            </column>
+            <column datatype='integer' name='[Cook Time]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Diet]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Ingredients]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;NCT of Delhi&quot;' value='&quot;Delhi&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Calculation_1202461146103447555]' derivation='User' name='[usr:Calculation_1202461146103447555:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Diet)]'>
+            <groupfilter function='level-members' level='[Diet]' user:ui-action-filter='[Action5_7E4D27E2DD4E41F09AF0BDF171C93A21]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Ingredients)]'>
+            <groupfilter function='level-members' level='[Ingredients]' user:ui-action-filter='[Action2_2DA3C1CC8CF64F25A89CB57F66E1E79B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (State)]'>
+            <groupfilter function='level-members' level='[State]' user:ui-action-filter='[Action1_C0FE501C5CFA450997EDAD78681D0C83]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (State)]</column>
+            <column>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Ingredients)]</column>
+            <column>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Diet)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[usr:Calculation_1202461146103447555:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[usr:Calculation_1202461146103447555:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='15'>&lt;</run>
+                <run bold='true' fontsize='15'>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[usr:Calculation_1202461146103447555:qk]</run>
+                <run bold='true' fontsize='15'>&gt; Mins</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{17E05BBD-8AB6-4D44-92C4-2A1B25FC32C1}' />
+    </worksheet>
+    <worksheet name='avg. prep time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='14'>Average </run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontsize='14'>Preparation Time</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='indian_food_Full Data (indian_f (indian_food_Full Data_Cleansed)' name='federated.13ihfwm0oc0h0u1a9t0m40slxtzr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13ihfwm0oc0h0u1a9t0m40slxtzr'>
+            <column caption='ROUND(AVG([Prep Time]))' datatype='real' name='[Calculation_1202461146103263234]' role='measure' type='quantitative' user:unnamed='avg. prep time'>
+              <calculation class='tableau' formula='ROUND(AVG([Prep Time]))' />
+            </column>
+            <column datatype='string' name='[Diet]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Ingredients]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Prep Time]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;NCT of Delhi&quot;' value='&quot;Delhi&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Calculation_1202461146103263234]' derivation='User' name='[usr:Calculation_1202461146103263234:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Diet)]'>
+            <groupfilter function='level-members' level='[Diet]' user:ui-action-filter='[Action5_7E4D27E2DD4E41F09AF0BDF171C93A21]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Ingredients)]'>
+            <groupfilter function='level-members' level='[Ingredients]' user:ui-action-filter='[Action2_2DA3C1CC8CF64F25A89CB57F66E1E79B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (State)]'>
+            <groupfilter function='level-members' level='[State]' user:ui-action-filter='[Action1_C0FE501C5CFA450997EDAD78681D0C83]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (State)]</column>
+            <column>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Ingredients)]</column>
+            <column>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Diet)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[usr:Calculation_1202461146103263234:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[usr:Calculation_1202461146103263234:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='15'>&lt;</run>
+                <run bold='true' fontsize='15'>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[usr:Calculation_1202461146103263234:qk]</run>
+                <run bold='true' fontsize='15'>&gt; Mins</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F0C4341A-2684-4BC8-83B2-EF76CEA26989}' />
+    </worksheet>
+    <worksheet name='dishes'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Dishes with Least Cooking time</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='indian_food_Full Data (indian_f (indian_food_Full Data_Cleansed)' name='federated.13ihfwm0oc0h0u1a9t0m40slxtzr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13ihfwm0oc0h0u1a9t0m40slxtzr'>
+            <column caption='total time' datatype='real' default-format='n#,##0;-#,##0' name='[Calculation_1202461146067357696]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([Cook Time])+AVG([Prep Time])' />
+            </column>
+            <column datatype='integer' name='[Cook Time]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Diet]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Ingredients]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Prep Time]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;NCT of Delhi&quot;' value='&quot;Delhi&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1202461146067357696]' derivation='User' name='[usr:Calculation_1202461146067357696:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Diet)]'>
+            <groupfilter function='level-members' level='[Diet]' user:ui-action-filter='[Action5_7E4D27E2DD4E41F09AF0BDF171C93A21]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Ingredients)]'>
+            <groupfilter function='level-members' level='[Ingredients]' user:ui-action-filter='[Action2_2DA3C1CC8CF64F25A89CB57F66E1E79B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (State)]'>
+            <groupfilter function='level-members' level='[State]' user:ui-action-filter='[Action1_C0FE501C5CFA450997EDAD78681D0C83]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[none:Name:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[usr:Calculation_1202461146067357696:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (State)]</column>
+            <column>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Ingredients)]</column>
+            <column>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Diet)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[usr:Calculation_1202461146067357696:qk]' scope='cols' value='Cooking Time (in Mins)' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[none:Name:nk]' value='148' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[usr:Calculation_1202461146067357696:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#b6992d' fontsize='14'><![CDATA[<[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[none:Name:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#555555' fontsize='14'>Cooking Time: </run>
+                <run bold='true' fontcolor='#b6992d' fontsize='14'><![CDATA[<[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[usr:Calculation_1202461146067357696:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#72b966' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[none:Name:nk]</rows>
+        <cols>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[usr:Calculation_1202461146067357696:qk]</cols>
+      </table>
+      <simple-id uuid='{C1B73516-9219-4CE2-BDC5-F05A0B6C60D1}' />
+    </worksheet>
+    <worksheet name='dishes count in india'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Number of Dishes across India</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='indian_food_Full Data (indian_f (indian_food_Full Data_Cleansed)' name='federated.13ihfwm0oc0h0u1a9t0m40slxtzr' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.13ihfwm0oc0h0u1a9t0m40slxtzr'>
+            <column datatype='string' name='[Diet]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Ingredients]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;NCT of Delhi&quot;' value='&quot;Delhi&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Name]' derivation='Count' name='[cnt:Name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Diet)]'>
+            <groupfilter function='level-members' level='[Diet]' user:ui-action-filter='[Action5_7E4D27E2DD4E41F09AF0BDF171C93A21]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Ingredients)]'>
+            <groupfilter function='level-members' level='[Ingredients]' user:ui-action-filter='[Action2_2DA3C1CC8CF64F25A89CB57F66E1E79B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Ingredients)]</column>
+            <column>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Action (Diet)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Longitude (generated)]' field-type='quantitative' max='11168204.319992488' min='7108485.7132759895' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Latitude (generated)]' field-type='quantitative' max='4345939.7899546381' min='738305.69455315941' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[cnt:Name:qk]' palette='green_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[cnt:Name:qk]' value='Count of Dishes'>
+              <formatted-text>
+                <run fontalignment='1' fontsize='12'>Count of Dishes</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[none:State:nk]' />
+              <color column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[cnt:Name:qk]' />
+              <geometry column='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#d3b348' fontsize='14'><![CDATA[<[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[none:State:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#666666' fontsize='14'>Count of Dishes: </run>
+                <run bold='true' fontcolor='#d3b348' fontsize='14'><![CDATA[<[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[cnt:Name:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Latitude (generated)]</rows>
+        <cols>[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{CA9F1F39-2D4F-42F0-BC98-3440EEE6C4B8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='56250' id='3' name='dishes count in india' w='45000' x='2500' y='12500' />
+        <zone h='8750' id='8' name='dishes count in india' pane-specification-id='0' param='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[cnt:Name:qk]' type-v2='color' w='18500' x='29500' y='75000' />
+        <zone h='40000' id='9' name='Ingrediets' w='50000' x='48300' y='23000' />
+        <zone h='15625' id='10' name='avg. cooking time' w='22500' x='51500' y='2500'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='15625' id='11' name='avg. prep time' w='22500' x='76000' y='2500'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='25125' id='12' name='Diet catg' w='26600' x='2500' y='71875' />
+        <zone h='8750' id='17' leg-item-layout='vert' name='Diet catg' pane-specification-id='0' param='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[none:Diet:nk]' type-v2='color' w='18500' x='29500' y='86875' />
+        <zone h='33750' id='18' name='dishes' w='50000' x='48300' y='64375' />
+        <zone h='10250' id='19' type-v2='text' w='45000' x='2500' y='2500'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='16'>INDIAN FOOD ANALYSIS</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='20' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='10250' id='19' type-v2='text' w='45000' x='2500' y='2500'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontsize='16'>INDIAN FOOD ANALYSIS</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='123' h='15625' id='10' is-fixed='true' name='avg. cooking time' w='22500' x='51500' y='2500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='123' h='15625' id='11' is-fixed='true' name='avg. prep time' w='22500' x='76000' y='2500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='56250' id='3' is-fixed='true' name='dishes count in india' w='45000' x='2500' y='12500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8750' id='8' name='dishes count in india' pane-specification-id='0' param='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[cnt:Name:qk]' type-v2='color' w='18500' x='29500' y='75000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40000' id='9' is-fixed='true' name='Ingrediets' w='50000' x='48300' y='23000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='270' h='33750' id='18' is-fixed='true' name='dishes' w='50000' x='48300' y='64375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='201' h='25125' id='12' is-fixed='true' name='Diet catg' w='26600' x='2500' y='71875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8750' id='17' leg-item-layout='vert' name='Diet catg' pane-specification-id='0' param='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[none:Diet:nk]' type-v2='color' w='18500' x='29500' y='86875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F905A8D8-940A-4F2A-9FA7-55EC5C8A1A00}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Diet catg'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Ingrediets' />
+        <viewpoint name='avg. cooking time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='avg. prep time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='dishes' />
+        <viewpoint name='dishes count in india'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{4F249F0F-6F26-461C-AC13-F54D40C1F62E}' />
+    </window>
+    <window class='worksheet' name='dishes count in india'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[cnt:Name:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{AC8B595C-E262-4878-9946-7DB96736319D}' />
+    </window>
+    <window class='worksheet' name='Ingrediets'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AEE562C0-0CF5-44EA-9AB3-546FA2B1590E}' />
+    </window>
+    <window class='worksheet' name='avg. cooking time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0E8CC7AA-8855-42A3-A100-4CBF072E020B}' />
+    </window>
+    <window class='worksheet' name='avg. prep time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2C29F4EC-32C3-42D8-8547-39C964DA5C54}' />
+    </window>
+    <window class='worksheet' name='Diet catg'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[none:Diet:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.13ihfwm0oc0h0u1a9t0m40slxtzr].[cnt:Name:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D4945975-8BE4-46ED-835A-2F6DD822F37C}' />
+    </window>
+    <window class='worksheet' name='dishes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{978EEC4C-CC76-4789-A76F-4791DFF7B2EC}' />
+    </window>
+  </windows>
+</workbook>
